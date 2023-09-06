@@ -1,5 +1,3 @@
 int my_toupper(int c){
-  if ((c >= 'a') && (c <= 'z'))
-    c  += 'A' - 'a';
-  return c;
+  return c + ('A'-'a') * ((c>='a') && (c<='z'));
 }
