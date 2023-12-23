@@ -1,10 +1,9 @@
 int my_atoi(const char *str){
-  int tmp;
-  int sign = 1;
-  int integer = 0;
+  int tmp, sign = 1, integer = 0;
   if (*str == '-') {
     sign = -1;
-    str++;}
+    str++;
+  }
   while(*str >= '0' && *str <= '9'){
     tmp = *str-'0';
     integer = integer * 10 + tmp;
